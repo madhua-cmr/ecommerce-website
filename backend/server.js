@@ -22,7 +22,7 @@ app.use("/api/user",userRoutes);
 app.use("/api/product",productRoute);
 app.use("/api/cart",cartroutes)
 app.use("/api/order",orderRoutes)
-
+app.use("/",(req,res)=>{res.send("Api working")})
 app.listen(port,()=>{
     console.log(`Server listening to the port ${port} `);
 
